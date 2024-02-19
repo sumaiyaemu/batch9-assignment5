@@ -1,4 +1,4 @@
-document .getElementById("buy-ticket").addEventListener("click",function(){
+document .getElementById("buy-ticket").addEventListener("click" ,function(){
     document .location = "#select-seat";
 });
 
