@@ -1,14 +1,18 @@
+document .getElementById("buy-ticket").addEventListener("click",function(){
+    document .location = "#select-seat";
+});
+
 const allBtn = document .getElementsByClassName("add-btn");
 let count = 0;
 let seat = 40;
 for(const btn of allBtn){
-    btn .addEventListener("click",function( e ){
+    btn.addEventListener("click", function(e){
         count =count +1;
         seat = seat -1;
-        const seatName = e .target.parentNode.childNodes[1].innerText;
-        console.log( e .target.parentNode.childNodes[1].innerText);
+        //const seatName = e .target.parentNode.childNodes[1].innerText;
+        //console.log( e .target.parentNode.childNodes.innerText);
 
-
+        
 
 
 
@@ -20,19 +24,20 @@ for(const btn of allBtn){
     });
 }
 
-//function handleSelect( event ){
-//    
-//    
-//   // document.getElementById("seat-detail").addEventListener("click", handleSelect);
-//
-//   //
-//   
-//   
-//   const seatName = event .target.parentNode.childNodes[1].innerText;
-//   
-//}
-//
-//
+
+function ticket(){
+    hideElementById ('seat-detail');
+    hideElementById ('select-seat');
+    showElementById ('success');
+
+}
+
+
 function setInnerText(id,value){
     document .getElementById (id) . innerText =value;
 }
+
+
+
+
+
