@@ -9,13 +9,6 @@ for(const btn of allBtn){
     btn.addEventListener("click", function(e){
         count =count +1;
         seat = seat -1;
-        //const seatName = e .target.parentNode.childNodes[1].innerText;
-        //console.log( e .target.parentNode.childNodes.innerText);
-
-        
-
-
-
         setInnerText("seat-count",count);
         setInnerText("seat-left",seat);
         e .target .style .backgroundColor = "rgb(29, 209, 0)";
